@@ -1,0 +1,16 @@
+.class[type="text"] {
+    background: grey;
+}
+
+a {
+    color: blue;
+}
+
+a:focus {
+    color: green;
+}
+
+input[type="text"], 
+input[type="email"] {
+    width: 200px;
+}
