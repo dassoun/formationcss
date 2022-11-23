@@ -6,15 +6,10 @@ body {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background: grey;
     padding: 20px;
     height: auto;
     color: #ffffff;
-    height: 30px;
     z-index: 2;
 }
 
@@ -23,17 +18,22 @@ body {
     height: auto;
 }
 
+.header-title {
+    text-align: center;
+    margin: 0;
+    z-index: 4;
+}
+
 .header-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px 0;
+    overflow: hidden;
+    margin-top: 10px;
     text-align: center;
     z-index: 3;
 }
 
 .header-nav a {
-    padding: 0 10px;
+    float: left;
+    width: 25%;
     color: inherit;
     text-decoration: none;
 }
@@ -42,18 +42,10 @@ body {
     text-decoration: underline;
 }
 
-.header-title {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    margin-top: 0;
-    z-index: 4;
-}
-
 .main {
     position: relative;
     background: lightgrey;
-    padding: 70px 20px 20px;
+    padding: 20px;
     font-size: 16px;
     z-index: 1;
 }
@@ -73,4 +65,18 @@ body {
     text-decoration: none;
     font-size: 1rem;
     padding: 0.4em 0.5em;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 20px;
+}
+
+.alignright {
+    float: right;
+    margin-right: 20px;
+}
+
+hr {
+    clear: both;
 }
