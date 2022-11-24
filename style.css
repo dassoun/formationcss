@@ -8,9 +8,19 @@ body {
 .header {
     background: grey;
     padding: 20px;
-    height: auto;
+    height: 400px;
     color: #ffffff;
     z-index: 2;
+    background:
+        linear-gradient(to bottom, #000, #0008),
+        center top / cover url("img/baniere-restaurant-fiasco.jpg") fixed;
+    /*
+    background-image: linear-gradient(to bottom, #000, #0008), url("img/baniere-restaurant-fiasco.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%, cover;
+    background-attachment: local, fixed;
+    */
 }
 
 .header img {
@@ -36,10 +46,12 @@ body {
     width: 25%;
     color: inherit;
     text-decoration: none;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 .header-nav a:hover {
     text-decoration: underline;
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 .main {
